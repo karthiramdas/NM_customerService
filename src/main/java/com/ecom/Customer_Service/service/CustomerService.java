@@ -21,7 +21,7 @@ public class CustomerService {
 
     public Customer getCustomerById(Long id) {
         return repository.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("Customer not found"));
+                .orElseThrow(() -> new ResourceNotFoundException("customer not Found"));
     }
 
     public Customer addCustomer(Customer customer) {

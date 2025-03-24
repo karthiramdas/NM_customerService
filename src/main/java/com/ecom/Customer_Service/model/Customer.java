@@ -17,7 +17,7 @@ public class Customer {
     private String name;
     private String email;
 
-    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "Customer", cascade = CascadeType.ALL)
     @JsonManagedReference
     private List<Order> orders;
 }

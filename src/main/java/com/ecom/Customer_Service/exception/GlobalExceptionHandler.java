@@ -25,7 +25,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(InvalidRequestException.class)
     public ResponseEntity<Map<String, Object>> handleInvalidRequest(InvalidRequestException ex) {
         Map<String, Object> response = new HashMap<>();
-        response.put("timestamp", LocalDateTime.now());
+        response.put("Timestamp", LocalDateTime.now());
         response.put("message", ex.getMessage());
         response.put("status", HttpStatus.BAD_REQUEST.value());
 
